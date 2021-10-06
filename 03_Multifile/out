@@ -1,0 +1,4 @@
+./prog > test1.log 2> /dev/null
+./prog-a > test1_a.log 2> /dev/null
+LD_LIBRARY_PATH=`pwd` ./prog-so	> test1_so.log 2> /dev/null
+cmp test1.log test1_a.log
