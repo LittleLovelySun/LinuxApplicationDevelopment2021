@@ -11,7 +11,9 @@ void help() {
 }
 
 void range(int M, int N, int S) {
-    for (int i = M; i < N; i += S)
+    int i = M;
+
+    for (i = M; i < N; i += S)
         printf("%d\n", i);
 }
 
