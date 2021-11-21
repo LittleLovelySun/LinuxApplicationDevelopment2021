@@ -13,7 +13,7 @@ void handle_regerror(regex_t r, int regexp_code, const char* msg) {
     char msg_buff[BUF_SIZE];
 
     if (regexp_code) {
-        int a = regerror(regexp_code, &r, msg_buff, BUF_SIZE);
+        regerror(regexp_code, &r, msg_buff, BUF_SIZE);
         printf("%s '%s'\n", msg, msg_buff);
         exit(EXIT_FAILURE);
     };
@@ -46,7 +46,6 @@ string_t init_string() {
 
 char* get_replaced(const char* substitution, const char* source, regmatch_t groupArray[], size_t maxGroups) {
     struct string_t res = init_string();
-    int i = 0;
 
     for (int i = 0; substitution[i] != '\0'; i++) {
         if (substitution[i] != '\\' || substitution[i + 1] == '\0') {
