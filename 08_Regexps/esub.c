@@ -67,7 +67,7 @@ char* get_replaced(const char* substitution, const char* source, regmatch_t grou
         int group = substitution[i + 1] - '0';
 
         if (group >= maxGroups) {
-            printf("No group '%d' in regexp", group);
+            printf("No group '%d' in regexp\n", group);
             exit(EXIT_FAILURE);
         }
 
@@ -88,7 +88,7 @@ int main (int argc, char const *argv[]) {
     }
 
     if (argc != 4) {
-        printf("Incorrect parameters count\n");
+        printf("Incorrect parameters count (%d)\n", argc);
         help();
         return 0;
     }
