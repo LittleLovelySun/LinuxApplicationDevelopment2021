@@ -1,6 +1,11 @@
 bin_PROGRAMS=guess_game
+pkgdata_DATA=ru/LC_MESSAGES/guess_game.mo
 
-messages.pot:	guess_game.pot guess_game.c
-	xgettext -k_ -c guess_game.c -o messages.new.pot
-	cp guess_game.pot messages.pot
-	msgmerge -U messages.pot messages.new.pot
+TRASH=*.cache config.* configure depcomp *.exe missing *.o
+
+ru/LC_MESSAGES/guess_game.mo: ru.po
+	mkdir -p `dirname $@`
+	msgfmt $< -o $@
+
+gitclean:
+	git clean -fd

@@ -9,8 +9,7 @@
 #define LOCALE_PATH "."
 
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
 	int i;
 	char *dir;
 
@@ -19,10 +18,14 @@ int main(int argc, char *argv[])
 	bindtextdomain ("guess_game", LOCALE_PATH);
 	textdomain ("guess_game");
 
-	/* Simple text */
-	puts(_("The game has begun\n"));
+	const char *yes = _("yes");
+	const char *no = _("no");
+
+	printf(_("The game has begun\n"));
+	printf(_("Use only `%s` and `%s` for answer\n"), yes, no);
 	int a = 0;
 	int b = 100;
+
 
 	while (a != b) {
 		int middle = (b - a) / 2 + a;
@@ -32,11 +35,15 @@ int main(int argc, char *argv[])
 
 		scanf("%s", answer);
 
-		if (!strcmp(answer, "yes")) {
+		if (!strcmp(answer, yes)) {
 			a = middle + 1;
 		}
-		else {
+		else if (!strcmp(answer, no)) {
 			b = middle;
+		}
+		else {
+			printf(_("Incorrect input\n"));
+			printf(_("Use only `%s` and `%s` for answer\n"), yes, no);
 		}
 	}
 
