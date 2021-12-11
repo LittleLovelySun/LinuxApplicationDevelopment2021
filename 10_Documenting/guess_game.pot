@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 13:33+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: guess_game.c:21
+msgid "yes"
+msgstr "а"
+
+#: guess_game.c:22
+msgid "no"
+msgstr "нет"
+
+#: guess_game.c:24
+#, c-format
+msgid "The game has begun\n"
+msgstr "Игра началась\т"
+
+#: guess_game.c:25 guess_game.c:46
+#, c-format
+msgid "Use only `%s` and `%s` for answer\n"
+msgstr "Используйте только `%s` и `%s` для ответа\n"
+
+#: guess_game.c:33
+#, c-format
+msgid ""
+"Number more than %d?\n"
+">"
+msgstr ""
+"Число больше %d?\n"
+">"
+
+#: guess_game.c:45
+#, c-format
+msgid "Incorrect input\n"
+msgstr "Некорректный ввод\n"
+
+#: guess_game.c:50
+#, c-format
+msgid "Your number is %d\n"
+msgstr "Ваше число %d\n"
