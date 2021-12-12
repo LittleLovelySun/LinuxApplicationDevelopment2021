@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  10_I18n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-05 12:33+0300\n"
+"POT-Creation-Date: 2021-12-12 15:29+0300\n"
 "PO-Revision-Date: 2021-12-05 12:50+0300\n"
 "Last-Translator: LittleSun <littlesun@littlesun-virtualbox>\n"
 "Language-Team: Russian\n"
@@ -18,20 +18,55 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#. Simple text
-#: guess_game.c:23
-msgid "The game has begun\n"
-msgstr "Игра началась\n"
+#: guess_game.c:22
+#, c-format
+msgid "Incorrect argument count\n"
+msgstr "Некорректное количество аргументов\n"
 
-#: guess_game.c:26
+#: guess_game.c:23 guess_game.c:31 guess_game.c:38
+#, c-format
+msgid ""
+"Usage ./guess_game [-r|--help]\n"
+"    -r      use roman\n"
+"    --help  show this help message and exit\n"
+msgstr ""
+"Запуск при помощи ./guess_game [-r|--help]\n"
+"    -r      использование римской системы счисления\n"
+"    --help  демонстрация этого сообщения и выход\n"
+
+#: guess_game.c:37
+#, c-format
+msgid "Incorrect argument\n"
+msgstr "Некорректный аргумент\n"
+
+#: guess_game.c:44
 msgid "yes"
 msgstr "да"
 
-#: guess_game.c:27
+#: guess_game.c:45
 msgid "no"
 msgstr "нет"
 
-#: guess_game.c:31
+#: guess_game.c:47
+#, c-format
+msgid "The game has begun\n"
+msgstr "Игра началась\n"
+
+#: guess_game.c:48 guess_game.c:73
+#, c-format
+msgid "Use only `%s` and `%s` for answer\n"
+msgstr "Используйте только `%s` и `%s` для ответа\n"
+
+#: guess_game.c:57
+#, c-format
+msgid ""
+"Number more than %s?\n"
+">"
+msgstr ""
+"Число больше %s?\n"
+">"
+
+#: guess_game.c:59
 #, c-format
 msgid ""
 "Number more than %d?\n"
@@ -40,7 +75,21 @@ msgstr ""
 "Число больше %d?\n"
 ">"
 
-#: guess_game.c:44
+#: guess_game.c:72
+#, c-format
+msgid "Incorrect input\n"
+msgstr "Некорректный ввод\n"
+
+#: guess_game.c:78
+#, c-format
+msgid "Your number is %s\n"
+msgstr "Ваше число %s\n"
+
+#: guess_game.c:80
 #, c-format
 msgid "Your number is %d\n"
-msgstr "Ваше число - %d\n"
+msgstr "Ваше число %d\n"
+
+#, fuzzy
+#~ msgid "Incorrect arguments count\n"
+#~ msgstr "Некорректный ввод\n"
