@@ -17,12 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: guess_game.c:22
+#: guess_game.c:36
 #, c-format
 msgid "Incorrect argument count\n"
 msgstr "Некорректное количество аргументов\n"
 
-#: guess_game.c:23 guess_game.c:31 guess_game.c:38
+#: guess_game.c:37 guess_game.c:45 guess_game.c:52
 #, c-format
 msgid ""
 "Usage ./guess_game [-r|--help]\n"
@@ -33,30 +33,30 @@ msgstr ""
 "    -r      использование римской системы счисления\n"
 "    --help  демонстрация этого сообщения и выход\n"
 
-#: guess_game.c:37
+#: guess_game.c:51
 #, c-format
 msgid "Incorrect argument\n"
 msgstr "Некорректный аргумент\n"
 
-#: guess_game.c:44
+#: guess_game.c:58
 msgid "yes"
 msgstr "да"
 
-#: guess_game.c:45
+#: guess_game.c:59
 msgid "no"
 msgstr "нет"
 
-#: guess_game.c:47
+#: guess_game.c:61
 #, c-format
 msgid "The game has begun\n"
 msgstr "Игра началась\n"
 
-#: guess_game.c:48 guess_game.c:73
+#: guess_game.c:62 guess_game.c:87
 #, c-format
 msgid "Use only `%s` and `%s` for answer\n"
 msgstr "Используйте только `%s` и `%s` для ответа\n"
 
-#: guess_game.c:57
+#: guess_game.c:71
 #, c-format
 msgid ""
 "Number more than %s?\n"
@@ -65,7 +65,7 @@ msgstr ""
 "Число больше %s?\n"
 ">"
 
-#: guess_game.c:59
+#: guess_game.c:73
 #, c-format
 msgid ""
 "Number more than %d?\n"
@@ -74,17 +74,17 @@ msgstr ""
 "Число больше %d?\n"
 ">"
 
-#: guess_game.c:72
+#: guess_game.c:86
 #, c-format
 msgid "Incorrect input\n"
 msgstr "Некорректный ввод\n"
 
-#: guess_game.c:78
+#: guess_game.c:92
 #, c-format
 msgid "Your number is %s\n"
 msgstr "Ваше число %s\n"
 
-#: guess_game.c:80
+#: guess_game.c:94
 #, c-format
 msgid "Your number is %d\n"
 msgstr "Ваше число %d\n"
